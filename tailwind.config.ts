@@ -18,9 +18,11 @@ const config: Config = {
         "rojo-oscuro": "#0C0C0D",
       },
       fontFamily: {
-        // "serif" se remapea a Space Grotesk para reutilizar las clases font-serif de los componentes.
+        // "serif" se remapea a un sans legible para reutilizar las clases font-serif de los componentes.
         serif: ["Space Grotesk", "system-ui", "sans-serif"],
         sans: ["Space Grotesk", "system-ui", "sans-serif"],
+        // "display" = Audiowide, la tipografía de marca (solo para momentos de marca, no cuerpo).
+        display: ["var(--font-audiowide)", "system-ui", "sans-serif"],
       },
     },
   },

@@ -16,7 +16,7 @@ export default function Home() {
       <main className="max-w-5xl mx-auto px-4 py-8">
         {posts.length === 0 ? (
           <div className="text-center py-24">
-            <h1 className="text-3xl font-bold">30 Minutos Más</h1>
+            <h1 className="text-4xl font-display">30 Minutos Más</h1>
             <p className="text-tinta/60 mt-3 text-lg">Solo 30 minutos para enterarte de todo lo que pasó hoy.</p>
             <p className="text-tinta/40 mt-1">Próximamente.</p>
           </div>

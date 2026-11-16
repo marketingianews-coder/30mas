@@ -8,7 +8,7 @@ export default function Header() {
       <div className="max-w-5xl mx-auto px-4">
         <div className="py-4 flex items-center justify-between border-b border-tinta/15">
           <Link href="/">
-            <Image src="/logo-claro.svg" alt="30 Minutos Más" width={220} height={60} priority />
+            <Image src="/logo-claro.svg" alt="30 Minutos Más" width={170} height={70} priority />
           </Link>
           <span className="hidden sm:block text-xs text-tinta/50">Todo lo de hoy, en 30 minutos</span>
         </div>
