@@ -16,6 +16,54 @@ export type Article = {
 }
 
 export const articles: Article[] = [
+  {
+    id: '4',
+    slug: 'estrella-muerta-gira-8-minutos-pulsos-radio',
+    title: 'Astrónomos hallan una estrella muerta que gira cada 8 minutos y emite misteriosos pulsos de radio',
+    excerpt: 'Un equipo identificó una pareja estelar a más de 5.000 años luz donde una estrella muerta gira cada ocho minutos y emite pulsos de radio.',
+    category: 'ciencia',
+    type: 'noticia',
+    author: 'Redacción 30 Minutos Más',
+    date: '2026-11-15',
+    readTime: '2 min',
+    tags: ['astronomia', 'estrella', 'pulsos de radio', 'espacio', 'icrar'],
+  },
+  {
+    id: '3',
+    slug: 'estudio-alzheimer-senales-cerebro-diez-anos-antes-sintomas',
+    title: 'Un estudio detecta señales de Alzheimer en el cerebro hasta diez años antes de los síntomas',
+    excerpt: 'Investigadores de Johns Hopkins hallaron que dos regiones del cerebro empiezan a encogerse hasta diez años antes de que aparezcan los problemas de memoria.',
+    category: 'salud',
+    type: 'noticia',
+    author: 'Redacción 30 Minutos Más',
+    date: '2026-11-15',
+    readTime: '2 min',
+    tags: ['alzheimer', 'cerebro', 'memoria', 'investigacion', 'johns hopkins'],
+  },
+  {
+    id: '2',
+    slug: 'ue-blindar-ucrania-invierno-onu-oriente-medio',
+    title: 'La UE busca blindar a Ucrania para el invierno mientras la ONU sesiona por Oriente Medio',
+    excerpt: 'Los cancilleres de la Unión Europea abordan cómo reforzar a Ucrania de cara al invierno, mientras el Consejo de Seguridad de la ONU sesiona sobre Oriente Medio.',
+    category: 'internacional',
+    type: 'noticia',
+    author: 'Redacción 30 Minutos Más',
+    date: '2026-11-15',
+    readTime: '2 min',
+    tags: ['union europea', 'ucrania', 'onu', 'oriente medio', 'siria'],
+  },
+  {
+    id: '1',
+    slug: 'gobierno-congela-precio-combustibles-febrero-camioneros',
+    title: 'Gobierno congela el precio de los combustibles hasta febrero tras la presión de los camioneros',
+    excerpt: 'El Ejecutivo reingresó el proyecto que congela el precio de los combustibles hasta febrero, tras negociar con gremios de camioneros en medio de movilizaciones.',
+    category: 'chile',
+    type: 'noticia',
+    author: 'Redacción 30 Minutos Más',
+    date: '2026-11-15',
+    readTime: '2 min',
+    tags: ['combustibles', 'camioneros', 'gobierno', 'movilizaciones'],
+  },
 ]
 
 export const publishedArticles = () => articles.filter((a) => !a.draft)
