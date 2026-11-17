@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import { Audiowide } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
-
-// Tipografía de marca (display): Audiowide. El cuerpo usa un sans legible por defecto.
-const audiowide = Audiowide({ subsets: ["latin"], weight: "400", variable: "--font-audiowide", display: "swap" });
+import "./home.css";
 
 export const metadata: Metadata = {
   title: { default: "30 Minutos Más", template: "%s · 30 Minutos Más" },
@@ -14,7 +11,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={audiowide.variable}>
+    <html lang="es">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Outfit:wght@400;500;600;700&family=Audiowide&family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         {children}
         <Analytics />

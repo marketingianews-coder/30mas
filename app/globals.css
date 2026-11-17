@@ -5,10 +5,12 @@
 body {
   background-color: #FAFAF7;
   color: #0C0C0D;
+  font-family: "Outfit", system-ui, sans-serif;
 }
 
 /* Cuerpo de artículo renderizado desde Markdown */
-.prose-article { color: #141416; line-height: 1.75; font-size: 1.075rem; }
+.prose-article { color: #141416; line-height: 1.75; font-size: 1.075rem; font-family: "Outfit", system-ui, sans-serif; }
+.prose-article h2, .prose-article h3 { font-family: "Sora", system-ui, sans-serif; }
 .prose-article h2 { font-size: 1.6rem; font-weight: 700; margin: 2rem 0 .75rem; }
 .prose-article h3 { font-size: 1.25rem; font-weight: 700; margin: 1.5rem 0 .5rem; }
 .prose-article p { margin: 1rem 0; }
