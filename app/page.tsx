@@ -102,15 +102,20 @@ export default function Home() {
                 {categorias.map((c, i) => {
                   const a = top(c.slug);
                   const p = PAL[i % PAL.length];
-                  const inner = (
-                    <>
-                      <span className="mi">{a?.readTime || "—"}</span>
-                      <h2>{c.nombre}</h2>
-                      <p>{a ? a.title : "Pronto, las primeras notas."}</p>
-                    </>
-                  );
                   return (
-                    <Link key={c.slug} href={a ? `/articulo/${a.slug}` : `/categoria/${c.slug}`} className={`b${i === 0 ? " w2" : ""}`} style={{ background: p.bg, color: p.fg }}>{inner}</Link>
+                    <Link key={c.slug} href={a ? `/articulo/${a.slug}` : `/categoria/${c.slug}`}
+                      className={`b${i === 0 ? " w2" : ""}`}
+                      style={{ background: p.bg, color: p.fg, padding: a?.image ? 0 : undefined, overflow: "hidden" }}>
+                      {a?.image && (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img src={a.image} alt="" style={{ width: "100%", height: 130, objectFit: "cover", display: "block", flexShrink: 0 }} />
+                      )}
+                      <div style={{ padding: "12px 16px", flex: 1, display: "flex", flexDirection: "column", gap: 8 }}>
+                        <span className="mi">{a?.readTime || "—"}</span>
+                        <h2>{c.nombre}</h2>
+                        <p style={{ margin: 0 }}>{a ? a.title : "Pronto, las primeras notas."}</p>
+                      </div>
+                    </Link>
                   );
                 })}
               </div>
