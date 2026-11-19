@@ -56,13 +56,17 @@ export default function Home() {
             <section className="mod">
               <div className="prog">{edicion.map((_, i) => <i key={i} className={i === 0 ? "on" : ""} />)}</div>
               <div className="stg">
-                <Link href={`/articulo/${destacada.slug}`} className="card" style={{ background: "#FFCC00", color: "#0C0C0D" }}>
-                  <div>
+                <Link href={`/articulo/${destacada.slug}`} className="card" style={{ background: "#FFCC00", color: "#0C0C0D", padding: destacada.image ? 0 : undefined, overflow: "hidden" }}>
+                  {destacada.image && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={destacada.image} alt="" style={{ width: "100%", height: 220, objectFit: "cover", display: "block", flexShrink: 0 }} />
+                  )}
+                  <div style={{ padding: "24px 32px 0", flex: 1 }}>
                     <div className="lab" style={{ opacity: 0.75 }}>{nombreCategoria(destacada.category)} · {destacada.readTime} · 1 de {edicion.length}</div>
                     <h1>{destacada.title}</h1>
                     <p>{destacada.excerpt}</p>
                   </div>
-                  <div className="nv"><span style={{ marginLeft: "auto" }}>{destacada.readTime}</span></div>
+                  <div className="nv" style={{ padding: "0 32px 24px" }}><span style={{ marginLeft: "auto" }}>{destacada.readTime}</span></div>
                 </Link>
                 <div className="nxt">
                   <h4>EN ESTA EDICIÓN</h4>
@@ -138,12 +142,16 @@ export default function Home() {
                 return (
                   <div className="ev" key={a.id}>
                     <time>{a.date.slice(5)}</time>
-                    <div>
+                    <div style={{ flex: 1 }}>
                       <span className="c" style={{ background: p.bg, color: p.fg }}>{nombreCategoria(a.category)}</span>
                       <h3><Link href={`/articulo/${a.slug}`}>{a.title}</Link></h3>
                       <p>{a.excerpt}</p>
                     </div>
-                    <span className="m">{a.readTime}</span>
+                    {a.image
+                      ? /* eslint-disable-next-line @next/next/no-img-element */
+                        <img src={a.image} alt="" style={{ width: 96, height: 72, objectFit: "cover", borderRadius: 8, flexShrink: 0, alignSelf: "center" }} />
+                      : <span className="m">{a.readTime}</span>
+                    }
                   </div>
                 );
               })}
