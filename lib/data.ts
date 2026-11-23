@@ -17,6 +17,46 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    id: '26', image: '/images/articles/26.jpg',
+    slug: 'paro-docente-24-noviembre-que-pasa-mañana-en-las-escuelas',
+    title: 'Paro docente mañana: qué pasa en las escuelas el 24 de noviembre',
+    excerpt: 'El Colegio de Profesores llama a paro de 24 horas y marcha mañana martes. Qué colegios paran, qué exigen y qué hacer con los niños.',
+    category: 'chile', type: 'noticia', author: 'Redacción 30 Minutos Más', date: '2026-11-23', readTime: '4 min',
+    tags: ['paro docente', 'educacion', 'profesores', 'presupuesto', '24N'],
+  },
+  {
+    id: '27', image: '/images/articles/27.jpg',
+    slug: 'sala-cuna-universal-pasa-al-senado-que-cambia-para-las-madres-trabajadoras',
+    title: 'Sala Cuna Universal pasa al Senado: qué cambia para las madres trabajadoras',
+    excerpt: 'La Cámara despachó la Sala Cuna Universal al Senado. Qué es, quiénes se benefician, copago del 20% y los 140.000 empleos femeninos proyectados.',
+    category: 'chile', type: 'noticia', author: 'Redacción 30 Minutos Más', date: '2026-11-23', readTime: '4 min',
+    tags: ['sala cuna', 'empleo femenino', 'senado', 'trabajo', 'mujeres'],
+  },
+  {
+    id: '28', image: '/images/articles/28.jpg',
+    slug: 'costo-de-vida-la-principal-preocupacion-de-los-chilenos-en-noviembre',
+    title: 'El costo de vida: la principal preocupación de los chilenos en noviembre',
+    excerpt: 'El IPC en 4,5%, el dólar sobre $1.000 y el desempleo en 9,8% hacen del costo de vida la mayor preocupación ciudadana. Qué dice el Gobierno.',
+    category: 'chile', type: 'noticia', author: 'Redacción 30 Minutos Más', date: '2026-11-23', readTime: '4 min',
+    tags: ['costo de vida', 'ipc', 'dolar', 'desempleo', 'economia'],
+  },
+  {
+    id: '29', image: '/images/articles/29.jpg',
+    slug: 'semana-de-movilizaciones-en-chile-que-viene-del-23-al-28-de-noviembre',
+    title: 'Semana de movilizaciones en Chile: lo que viene del 23 al 28 de noviembre',
+    excerpt: 'Paro docente el 24N, marcha No+AFP el 28N y más. La agenda completa de movilizaciones de esta semana y lo que demanda cada organización.',
+    category: 'chile', type: 'noticia', author: 'Redacción 30 Minutos Más', date: '2026-11-23', readTime: '4 min',
+    tags: ['movilizaciones', 'paro', 'presupuesto', 'kast', 'noviembre'],
+  },
+  {
+    id: '30', image: '/images/articles/30.jpg',
+    slug: 'sismo-magnitud-4-1-los-vilos-lunes-23-noviembre',
+    title: 'Sismo de magnitud 4,1 sacude Los Vilos este lunes',
+    excerpt: 'El Centro Sismológico Nacional registró un sismo de 4,1 a 60 km al oeste de Los Vilos. Sin daños ni alertas de tsunami.',
+    category: 'chile', type: 'noticia', author: 'Redacción 30 Minutos Más', date: '2026-11-23', readTime: '2 min',
+    tags: ['sismo', 'los vilos', 'csn', 'temblor', 'coquimbo'],
+  },
+  {
     id: '20', image: '/images/articles/20.jpg',
     slug: 'senado-despacha-presupuesto-2027-educacion-si-agricultura-no',
     title: 'Senado despacha Presupuesto 2027: Educación sí, Agricultura no',
