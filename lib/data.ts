@@ -17,6 +17,46 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    id: '31', image: '/images/articles/31.jpg',
+    slug: 'paro-docente-24n-balance-jornada-nacional',
+    title: 'Paro docente 24N: balance de la jornada nacional contra los recortes en educación',
+    excerpt: 'El Colegio de Profesores realizó un paro nacional este 24 de noviembre contra los recortes en educación del Presupuesto 2027. Balance, demandas y qué sigue.',
+    category: 'chile', type: 'noticia', author: 'Redacción 30 Minutos Más', date: '2026-11-24', readTime: '4 min',
+    tags: ['paro docente','colegio de profesores','educacion','presupuesto 2027','movilizacion'],
+  },
+  {
+    id: '32', image: '/images/articles/32.jpg',
+    slug: 'dolar-baja-1016-repunte-cobre-24-noviembre',
+    title: 'El dólar baja a $1.016 por el repunte del cobre: qué significa para tu bolsillo',
+    excerpt: 'El dólar cayó a $1.016 este 24 de noviembre empujado por el alza del cobre a US$5,78 la libra. Qué explica el movimiento y cómo impacta en el bolsillo.',
+    category: 'chile', type: 'noticia', author: 'Redacción 30 Minutos Más', date: '2026-11-24', readTime: '3 min',
+    tags: ['dolar','cobre','economia','tipo de cambio','bolsillo'],
+  },
+  {
+    id: '33', image: '/images/articles/33.jpg',
+    slug: 'sernac-alerta-incendio-autos-electricos-hyundai-ioniq',
+    title: 'SERNAC alerta por riesgo de incendio en 33 autos eléctricos Hyundai Ioniq vendidos en Chile',
+    excerpt: 'El SERNAC alertó por riesgo de incendio en 33 autos eléctricos Hyundai Ioniq vendidos en Chile. Qué modelos están afectados, qué hacer y cómo reclamar.',
+    category: 'chile', type: 'noticia', author: 'Redacción 30 Minutos Más', date: '2026-11-24', readTime: '3 min',
+    tags: ['sernac','hyundai','autos electricos','llamado a revision','consumidores'],
+  },
+  {
+    id: '34', image: '/images/articles/34.jpg',
+    slug: 'crisis-gabinete-kast-ministro-justicia-al-borde',
+    title: 'Crisis en el gabinete de Kast: el ministro de Justicia al borde de la salida',
+    excerpt: 'El gabinete de Kast enfrenta una crisis con el ministro de Justicia al borde de la salida y otros secretarios de Estado cuestionados. Qué pasó y qué viene.',
+    category: 'chile', type: 'noticia', author: 'Redacción 30 Minutos Más', date: '2026-11-24', readTime: '4 min',
+    tags: ['kast','gabinete','ministro de justicia','crisis politica','gobierno'],
+  },
+  {
+    id: '35', image: '/images/articles/35.jpg',
+    slug: 'presupuesto-2027-pasa-a-comision-mixta-que-significa',
+    title: 'El Presupuesto 2027 pasa a comisión mixta: qué significa y qué está en disputa',
+    excerpt: 'El Presupuesto 2027 pasó a comisión mixta entre Cámara y Senado. Qué es una comisión mixta, qué está en disputa y cuáles son los plazos para aprobarlo.',
+    category: 'chile', type: 'noticia', author: 'Redacción 30 Minutos Más', date: '2026-11-24', readTime: '4 min',
+    tags: ['presupuesto 2027','comision mixta','congreso','gasto publico','educacion'],
+  },
+  {
     id: '26', image: '/images/articles/26.jpg',
     slug: 'paro-docente-24-noviembre-que-pasa-mañana-en-las-escuelas',
     title: 'Paro docente mañana: qué pasa en las escuelas el 24 de noviembre',
