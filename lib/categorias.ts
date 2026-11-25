@@ -8,6 +8,7 @@ export const categorias: Categoria[] = [
   { slug: 'ciencia', nombre: 'Ciencia', descripcion: 'Descubrimientos, investigación y tecnología científica.' },
   { slug: 'medio-ambiente', nombre: 'Medio ambiente', descripcion: 'Clima, naturaleza y sostenibilidad.' },
   { slug: 'estilo-de-vida', nombre: 'Estilo de vida', descripcion: 'Cultura, tendencias y vida cotidiana.' },
+  { slug: 'deportes', nombre: 'Deportes', descripcion: 'Fútbol, La Roja y todo el deporte chileno y mundial.' },
   { slug: 'opinion', nombre: 'Opinión', descripcion: 'Columnas y análisis de opinión.' },
 ]
 

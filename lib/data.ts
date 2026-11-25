@@ -17,6 +17,46 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    id: '36', image: '/images/articles/36.jpg',
+    slug: 'binance-robo-cripto-6300-millones-mayor-hackeo-historia',
+    title: 'El mayor robo cripto de la historia: hackean US$6.300 millones a Binance',
+    excerpt: 'El 29 de octubre hackearon US$6.300 millones a Binance. Cómo el grupo norcoreano TraderTraitor infiltró a empleados y qué alerta deja para la ciberseguridad.',
+    category: 'internacional', type: 'noticia', author: 'Redacción 30 Minutos Más', date: '2026-11-25', readTime: '4 min',
+    tags: ['binance','hackeo','cripto','ciberseguridad','robo'],
+  },
+  {
+    id: '37', image: '/images/articles/37.jpg',
+    slug: 'metro-santiago-linea-1-un-ano-dificil-de-fallas',
+    title: 'Un año difícil para el Metro de Santiago: la Línea 1 suma otra jornada de fallas',
+    excerpt: 'La Línea 1 del Metro de Santiago tuvo dos interrupciones el mismo día en hora punta. El patrón de fallas de 2026 y su impacto en millones de pasajeros.',
+    category: 'chile', type: 'noticia', author: 'Redacción 30 Minutos Más', date: '2026-11-25', readTime: '4 min',
+    tags: ['metro','santiago','linea 1','fallas','transporte'],
+  },
+  {
+    id: '38', image: '/images/articles/38.jpg',
+    slug: 'muere-delfina-guzman-a-los-98-anos-leyenda-del-teatro-chileno',
+    title: 'Muere Delfina Guzmán a los 98 años: adiós a una leyenda del teatro chileno',
+    excerpt: 'Delfina Guzmán murió a los 98 años tras siete décadas de trayectoria en teatro, cine y TV. El Gobierno decretó duelo oficial. Repaso de su legado.',
+    category: 'estilo-de-vida', type: 'noticia', author: 'Redacción 30 Minutos Más', date: '2026-11-25', readTime: '4 min',
+    tags: ['delfina guzman','teatro','cultura','chile','obituario'],
+  },
+  {
+    id: '39', image: '/images/articles/39.jpg',
+    slug: 'dominga-lopez-top-12-miss-universo-2026-historico-para-chile',
+    title: 'Dominga López en el Top 12 de Miss Universo 2026: una noche histórica para Chile',
+    excerpt: 'La chilena Dominga López avanzó al Top 12 de Miss Universo 2026 en Puerto Rico. Crónica de una participación que la ubica entre lo mejor del país en el certamen.',
+    category: 'estilo-de-vida', type: 'noticia', author: 'Redacción 30 Minutos Más', date: '2026-11-25', readTime: '3 min',
+    tags: ['miss universo','dominga lopez','chile','certamen','belleza'],
+  },
+  {
+    id: '40', image: '/images/articles/40.jpg',
+    slug: 'la-roja-sub-17-cae-ante-republica-dominicana-mundial',
+    title: 'La Roja Sub-17 cae ante República Dominicana y se complica en el Mundial',
+    excerpt: 'Chile perdió 1-2 ante República Dominicana en el Mundial Sub-17 de Catar tras fallar dos penales. Define su suerte ante Montenegro el 27 de noviembre.',
+    category: 'deportes', type: 'noticia', author: 'Redacción 30 Minutos Más', date: '2026-11-25', readTime: '3 min',
+    tags: ['deportes','la roja','sub-17','mundial','futbol'],
+  },
+  {
     id: '31', image: '/images/articles/31.jpg',
     slug: 'paro-docente-24n-balance-jornada-nacional',
     title: 'Paro docente 24N: balance de la jornada nacional contra los recortes en educación',
