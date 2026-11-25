@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Article } from "@/lib/data";
 import { latestArticles, articlesByCategory } from "@/lib/data";
 import { categorias, nombreCategoria } from "@/lib/categorias";
+import MenuMovil from "@/components/MenuMovil";
 
 export const dynamic = "force-static";
 
@@ -40,7 +41,7 @@ export default function Home() {
       <div className="mm">
         {/* Encabezado */}
         <div className="hdr hh">
-          <span className="hbtn">☰ Menú</span>
+          <MenuMovil />
           <div className="lg"><Link href="/"><Logo /></Link></div>
           <div className="dt"><b>Edición del día</b><span>{hoy}</span></div>
         </div>
